@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 924px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-list{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right:30px;
+    padding: 10px;
+}
+.nav-item a{
+    color: silver;
+    text-decoration: none;
+}
+.logo{
+    margin-right: auto;
+    margin-left: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-item:hover{  
+    border-top: 2px solid #0065FC ;
+}
+.search-bar{
+    width: 340px;
+    height: 40px;
+    margin-right: auto;
+    display: inline-flex;
+    align-items: center;
+}
+.search-bar input{
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7f8;
+    border-bottom: 1px solid #e7e7e7f8;
+    color: black;
+    font-weight: bold;
+    
+}
+.search-bar input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.search-bar button{
+    height: 40px;
+    width: 90px;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.search-bar div{
+    width: 45px;
+    height: 40px;
+    background-color: #e7e7e7f8;
+    color: black;
+    padding-top: 12px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+.filter{
+    width: 100%;
+}
+.wrapper{
+    margin-top: 40px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .button{
+    height: 44px;
+    width: auto;
+    float: left;
+    padding-right: 6px;
+    margin-right: 10px;
+    border-top: 2px solid #e7e7e7f8;
+    border-bottom: 2px solid #e7e7e7f8;
+    border-right: 2px solid #e7e7e7f8;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: #0065FC;
+    text-align: center;
+    border-radius:20px;
+    box-sizing: border-box;
+    line-height: 40px;
+    background-color: #bed4f5;
+}
+.wrapper .button .icon i{
+    font-size: 15px;
+    line-height: 40px;
+}
+.wrapper .button span{
+    font-size: 18px;
+    padding: 2px;
+    text-align: center;
+}
+
+.footer-wrapper{
+    background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+    width: 924px;
+    height: 100px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    padding-right: 200px;
+    margin-top: 50px;
+}
+.mid-grid{
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-auto-rows: 3em;
+    grid-gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.container div:nth-child(1), div:nth-child(6) {
+    border-radius: 20px;
+    background-color: white
+}
+
+.container div:nth-child(2), div:nth-child(7) {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container div:nth-child(3), div:nth-child(8) {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container div:nth-child(4) {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container div:nth-child(5) {
+    background-color: white;
+    border-radius: 20px;
+}
