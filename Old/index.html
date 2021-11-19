@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 762px)"
-      href="css/mobile.css"
-      type="text/css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" media="" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
@@ -26,19 +20,19 @@
 
   <body>
     <main>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#accommodation" class="nav-link">Accommodations</a>
-          </li>
-          <li class="nav-item">
-            <a href="#activities" class="nav-link">Activities</a>
-          </li>
-        </ul>
-        <div class="logo">
-          <a href="#"><img src="./images/logo/Booki.png" /></a>
-        </div>
-      </nav>
+      <header>
+        <img class="logo" src="./images/logo.png" alt="logo" />
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="#accommodation" class="nav-link">Accommodations</a>
+            </li>
+            <li>
+              <a href="#activities" class="nav-link">Activities</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <div class="search-box">
         <h4>Find a place for your dream vacation</h4>
@@ -53,8 +47,8 @@
       </div>
 
       <div class="filter">
+        <h4>Filters</h4>
         <div class="wrapper">
-          <h3>Filter</h3>
           <div class="button">
             <div class="icon"><i class="fa fa-money-bill-wave"></i></div>
             <span>Low cost</span>
@@ -107,19 +101,25 @@
       <div class="footer-wrapper">
         <div class="footer-item">
           <h3>About</h3>
-          <p>Site Map</p>
-          <p>General Terms and Conditions</p>
-          <p>Data and Privacy</p>
+          <ul>
+            <li>Site Map</li>
+            <li>Data and Privacy</li>
+          </ul>
         </div>
         <div class="footer-item">
           <h3>Our Accommodations</h3>
-          <p>Quality Assessement</p>
-          <p>You have a hotel?</p>
+          <ul>
+            <li></li>
+            <li>Quality Assessement</li>
+            <li>You have a hotel?</li>
+          </ul>
         </div>
         <div class="footer-item">
           <h3>Assistance</h3>
-          <p>Help Desk</p>
-          <p>Contact us</p>
+          <ul>
+            <li>Help Desk</li>
+            <li>Contact us</li>
+          </ul>
         </div>
       </div>
     </footer>
