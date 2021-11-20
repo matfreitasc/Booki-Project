@@ -70,8 +70,8 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: silver;
-  border-radius: 5px 0px 0px 5px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
   height: 35px;
   width: 100%;
   color: black;
@@ -88,11 +88,15 @@ header img {
   border: none;
   cursor: pointer;
   text-align: center;
-  border: silver 1px solid;
+  border: #f2f2f2 1px solid;
+  text-transform: capitalize;
+}
+.search-bar input:focus {
+  outline: none;
 }
 .search-bar button {
   background-color: blue;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
   height: 35px;
   width: 100%;
   color: white;
@@ -102,16 +106,22 @@ header img {
 
 .filter {
   display: flex;
+  align-items: center;
   margin-top: 20px;
+  margin-left: 0px;
   width: auto;
   height: 50px;
   border-radius: 5px;
-  align-items: center;
+}
+.filter span {
+  text-align: center;
 }
 .filter h4 {
   padding-right: 20px;
 }
-
+.wrapper {
+  margin-right: 20%;
+}
 .wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -156,14 +166,19 @@ header img {
 .mid-grid {
   width: 70%;
   height: 450px;
-  background-color: silver;
+  background-color: #f2f2f2;
   margin-right: 28px;
   border-radius: 10px;
 }
+
+.container-grid {
+  margin: 20px;
+}
+
 .right-grid {
   width: 30%;
   height: 450px;
-  background-color: silver;
+  background-color: #f2f2f2;
   border-radius: 10px;
 }
 
