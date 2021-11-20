@@ -131,6 +131,7 @@ header img {
   border-right: 2px solid silver;
   border-top: 2px solid silver;
   border-bottom: 2px solid silver;
+  border-left: 0.5px solid silver;
   cursor: pointer;
 }
 .icon {
@@ -143,6 +144,27 @@ header img {
   border-radius: 40px;
   color: #0059fc;
   background-color: #deebff;
+}
+
+#accommodations {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  align-items: center;
+  margin-top: 20px;
+}
+.mid-grid {
+  width: 70%;
+  height: 450px;
+  background-color: silver;
+  margin-right: 28px;
+  border-radius: 10px;
+}
+.right-grid {
+  width: 30%;
+  height: 450px;
+  background-color: silver;
+  border-radius: 10px;
 }
 
 footer {
