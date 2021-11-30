@@ -250,16 +250,66 @@ header img {
 }
 
 .right-grid {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   height: 450px;
   background-color: #f2f2f2;
   border-radius: 20px;
+  align-items: center;
 }
 .header-right-grid {
   display: flex;
-  justify-content: space-between;
+  width: 80%;
+  height: 50px;
   align-items: center;
-  align-content: center;
+  justify-content: space-between;
+}
+.container-grid-column {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.side-card {
+  width: 240px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.side-card .inner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  height: 95px;
+}
+.inner-card .content {
+  margin: 20px 20px 20px 20px;
+}
+.inner-card .content p {
+  font-size: 10px;
+  margin: 20px 0px 0px 0px;
+  text-align: start;
+}
+.inner-card .side-image-container {
+  height: 95px;
+  width: 90px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 12px 0px 0px 12px;
+  padding: 2px;
+}
+.side-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .stars-outer {
   position: relative;
