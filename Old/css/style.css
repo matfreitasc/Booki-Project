@@ -38,7 +38,7 @@ header img {
   border-style: none;
   cursor: pointer;
   font-weight: bold;
-  margin: 0px 0px 20px 20px;
+  margin: 0px 0px 0px 20px;
 }
 
 .nav-links {
@@ -220,18 +220,25 @@ header img {
   justify-items: center;
   width: 100%;
   height: auto;
-  margin: 25px;
+  margin: 20px;
 }
 .card {
   width: 170px;
   border-radius: 10px;
   background-color: white;
 }
-.card p {
-  font-size: 12px;
-  font-weight: bold;
+.cards-content {
   margin: 5px;
 }
+.card-hotel-name {
+  font-size: 12px;
+  font-weight: bold;
+}
+.card-hotel-price {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
 .card .ratings {
   margin: 2px;
 }
@@ -289,13 +296,12 @@ header img {
   margin: 10px;
   background-color: white;
   border-radius: 10px;
-
 }
 .inner-card .content {
   margin: 20px 20px 20px 20px;
 }
 .inner-card .content p {
-  font-size: 10px;
+  font-size: 8px;
   margin: 12px 0px 0px 0px;
   text-align: start;
 }
@@ -315,21 +321,20 @@ header img {
 .stars-outer {
   position: relative;
   display: inline-block;
-  margin-left: 5px;
 }
 
 .stars-outer::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 12px;
+  font-size: 8px;
   color: #ccc;
 }
 .stars-inner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 12px;
+  font-size: 8px;
   color: #0062fc;
 }
 .activities-container-grid {
