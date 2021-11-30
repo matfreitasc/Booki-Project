@@ -263,7 +263,7 @@ header img {
   width: 80%;
   height: 50px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .container-grid-column {
   width: 100%;
@@ -279,23 +279,24 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: white;
+  justify-content: flex-start;
   border-radius: 10px;
 }
 .side-card .inner-card {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 2px;
   height: 95px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+
 }
 .inner-card .content {
   margin: 20px 20px 20px 20px;
 }
 .inner-card .content p {
   font-size: 10px;
-  margin: 20px 0px 0px 0px;
+  margin: 12px 0px 0px 0px;
   text-align: start;
 }
 .inner-card .side-image-container {
@@ -303,13 +304,13 @@ header img {
   width: 90px;
   overflow: hidden;
   flex-shrink: 0;
-  border-radius: 12px 0px 0px 12px;
   padding: 2px;
 }
 .side-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px 0 0 8px;
 }
 .stars-outer {
   position: relative;
