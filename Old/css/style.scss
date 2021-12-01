@@ -20,13 +20,12 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 0 15px 0 0;
-}
-
-header img {
+  img {
   margin-right: auto;
   height: 40px;
   margin-top: 20px;
   cursor: pointer;
+    }
 }
 
 .bold-text {
@@ -44,41 +43,40 @@ header img {
 .nav-links {
   list-style: none;
   margin-top: 0;
+  li {
+    display: inline-block;
+    height: 100px;
+    padding: 20px;
+    border-top: white 2px solid;
+    cursor: pointer;
+  }
+  li:hover {
+    border-top: #0065fc 2px solid;
+  }
+  li a {
+    text-decoration: none;
+    color: #0065fc;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 20px;
+    transition: 0.5s;
+  }
 }
 
-.nav-links li {
-  display: inline-block;
-  height: 100px;
-  padding: 20px;
-  border-top: white 2px solid;
-  cursor: pointer;
-}
-
-.nav-links li:hover {
-  border-top: #0065fc 2px solid;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #0065fc;
-  font-size: 15px;
-  font-weight: 600;
-  margin-right: 20px;
-  transition: 0.5s;
-}
 .search-box {
   padding: 5px 0px 5px 0px;
+  form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    width: 280px;
+  }
+  h3 {
+    margin-top: 5px;
+  }
 }
-.search-box form {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 20px;
-  width: 280px;
-}
-.search-box h3 {
-  margin-top: 5px;
-}
+
 .search-bar {
   display: flex;
   justify-content: flex-start;
