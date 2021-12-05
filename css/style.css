@@ -97,7 +97,7 @@ header img {
   margin-top: 5px;
 }
 
-.search-bar {
+.search-box .search-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +112,7 @@ header img {
   border-radius: 5px;
 }
 
-.search-bar div {
+.search-box .search-bar div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ header img {
   cursor: pointer;
 }
 
-.search-bar input {
+.search-box .search-bar input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,17 +145,16 @@ header img {
   width: 160px;
   color: black;
   border: none;
-  cursor: pointer;
   text-align: center;
   border: #f2f2f2 1px solid;
   text-transform: capitalize;
 }
 
-.search-bar input:focus {
+.search-box .search-bar input:focus {
   outline: none;
 }
 
-.search-bar button {
+.search-box .search-bar button {
   background-color: blue;
   border-radius: 0 10px 10px 0;
   height: 35px;
@@ -189,9 +188,6 @@ header img {
 
 .wrapper {
   margin-right: 20%;
-}
-
-.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +199,7 @@ header img {
           align-items: center;
   width: 992px;
   height: 40px;
-  border-radius: 5px;
+  gap: 10px;
 }
 
 .button {
@@ -255,6 +251,12 @@ header img {
   margin-bottom: 20px;
 }
 
+.info-found p {
+  margin-left: 5px;
+  width: 300px;
+  font-size: 12px;
+}
+
 .info-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -272,12 +274,6 @@ header img {
   border: 2px solid #f2f2f2;
   border-radius: 50%;
   color: #0065fc;
-}
-
-.info-found p {
-  margin-left: 5px;
-  width: 300px;
-  font-size: 12px;
 }
 
 #accommodations {
@@ -320,6 +316,10 @@ header img {
           box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
 }
 
+.card .ratings {
+  margin: 2px;
+}
+
 .cards-content {
   margin: 5px 0px 5px 5px;
 }
@@ -332,10 +332,6 @@ header img {
 .card-hotel-price {
   font-size: 10px;
   padding-top: 5px;
-}
-
-.card .ratings {
-  margin: 2px;
 }
 
 .image-container {
@@ -470,25 +466,25 @@ header img {
   border-radius: 8px 0 0 8px;
 }
 
-.stars-outer {
-  position: relative;
-  display: inline-block;
-}
-
-.stars-outer::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 8px;
-  color: #ccc;
-}
-
 .stars-inner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 8px;
   color: #0062fc;
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-outer:before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 8px;
+  color: #ccc;
 }
 
 .activities-container-grid {
@@ -552,7 +548,7 @@ footer ul li {
   list-style: none;
 }
 
-.footer-item {
+footer .footer-item {
   display: inline-block;
   padding: 50px;
 }
