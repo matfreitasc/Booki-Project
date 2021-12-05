@@ -21,11 +21,11 @@ header {
   align-items: center;
   padding: 0 15px 0 0;
   img {
-  margin-right: auto;
-  height: 40px;
-  margin-top: 20px;
-  cursor: pointer;
-    }
+    margin-right: auto;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 }
 
 .bold-text {
@@ -155,7 +155,7 @@ header {
   align-items: center;
   width: auto;
   padding-right: 10px;
-  height: 40px;
+  height: 35px;
   border-radius: 40px;
   border-right: 2px solid silver;
   border-top: 2px solid silver;
@@ -166,8 +166,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
   border-radius: 40px;
   color: #0059fc;
@@ -224,7 +224,7 @@ header {
   width: 170px;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0px 6px 9px 2px rgb(0 0 0 / 21%);
+  box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
 }
 .cards-content {
   margin: 5px 0px 5px 5px;
@@ -286,7 +286,6 @@ header {
   align-items: center;
   justify-content: flex-start;
   border-radius: 10px;
-  
 }
 .side-card .inner-card {
   display: flex;
@@ -296,7 +295,7 @@ header {
   width: 240px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 6px 9px 2px rgb(0 0 0 / 21%);
+  box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
 }
 .inner-card .content {
 }
