@@ -449,6 +449,10 @@ header img {
   font-size: 15px;
 }
 
+.side-card .inner-card .content .ratings {
+  margin-top: 5px;
+}
+
 .side-card .side-image-container {
   height: 95px;
   width: 90px;
@@ -509,12 +513,13 @@ header img {
   height: auto;
 }
 
-.active-card {
+.active-container .active-card {
   width: 100%;
   height: auto;
   border-radius: 10px;
   background-color: white;
   margin: 20px;
+  text-align: center;
 }
 
 footer {

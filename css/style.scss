@@ -305,8 +305,7 @@ header {
         font-size: 15px;
       }
       .ratings {
-        margin
-        
+        margin-top: 5px;
       }
     }
   }
@@ -356,14 +355,16 @@ header {
   align-items: center;
   width: 100%;
   height: auto;
+  .active-card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+  }
 }
-.active-card {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  background-color: white;
-  margin: 20px;
-}
+
 footer {
   display: flex;
   padding: 15px;
