@@ -536,25 +536,113 @@ header img {
   height: auto;
   border-radius: 15px;
   background-color: white;
-  text-align: center;
+  text-align: start;
   -webkit-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
           box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
 }
 
+.active-container .active-card p {
+  font-size: 12px;
+  padding: 10px;
+  font-weight: 800;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: middle;
+}
+
 .active-container .active-card.small {
-  height: 100px;
+  height: 120px;
+}
+
+.active-container .active-card.small .activities-image-container {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+
+.active-container .active-card.small .activities-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .active-container .active-card.medium {
   height: 120px;
 }
 
+.active-container .active-card.medium .activities-image-container {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+}
+
+.active-container .active-card.medium .activities-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
 .active-container .active-card.large {
   height: 170px;
 }
 
+.active-container .active-card.large .activities-image-container {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+}
+
+.active-container .active-card.large .activities-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.active-container .active-card.xlarge {
+  height: 170px;
+}
+
+.active-container .active-card.xlarge .activities-image-container {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+}
+
+.active-container .active-card.xlarge .activities-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
 .active-container .active-card.big {
   height: 320px;
+}
+
+.active-container .active-card.big .activities-image-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.active-container .active-card.big .activities-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 footer {
@@ -586,10 +674,17 @@ footer div {
 
 footer ul li {
   list-style: none;
+  font-size: 10px;
 }
 
 footer .footer-item {
   display: inline-block;
   padding: 50px;
+}
+
+footer .footer-item h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
