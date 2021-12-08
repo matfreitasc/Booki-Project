@@ -499,10 +499,15 @@ header img {
 }
 
 .activities-container-grid {
-  background-color: blue;
   width: 100%;
   height: auto;
-  margin-top: 30px;
+  margin: 30px 0;
+}
+
+.activities-container-grid h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .active-container {
@@ -511,8 +516,7 @@ header img {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 500px;
-  margin: 20px 0;
+  height: 320px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
@@ -523,33 +527,34 @@ header img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
+  gap: 25px;
 }
 
 .active-container .active-card {
   position: relative;
-  width: 250px;
+  width: 212px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: white;
-  margin: 20px;
   text-align: center;
+  -webkit-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
+          box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
 }
 
 .active-container .active-card.small {
-  height: 120px;
+  height: 100px;
 }
 
 .active-container .active-card.medium {
-  height: 180px;
+  height: 120px;
 }
 
 .active-container .active-card.large {
-  height: 230px;
+  height: 170px;
 }
 
 .active-container .active-card.big {
-  height: 260px;
+  height: 320px;
 }
 
 footer {

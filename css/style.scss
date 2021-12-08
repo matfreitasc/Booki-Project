@@ -346,40 +346,42 @@ header {
 }
 
 .activities-container-grid {
-  background-color: blue;
   width: 100%;
   height: auto;
-  margin-top: 30px;
+  margin: 30px 0;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 }
 .active-container {
   display: flex;
   align-content: center;
-  height: 500px;
-  margin: 20px 0;
+  height: 320px;
   flex-flow: column wrap;
   flex-grow: 1;
   justify-content: space-between;
-  gap: 20px;
+  gap: 25px;
   .active-card {
     position: relative;
-    width: 250px;
+    width: 212px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
-    margin: 20px;
     text-align: center;
-
+    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
     &.small {
-      height: 120px;
+      height: 100px;
     }
     &.medium {
-      height: 180px;
+      height: 120px;
     }
     &.large {
-      height: 230px;
+      height: 170px;
     }
     &.big {
-      height: 260px;
+      height: 320px;
     }
   }
 }
