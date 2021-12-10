@@ -212,6 +212,7 @@ header {
   gap: 25px;
   align-items: center;
   justify-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
@@ -327,21 +328,6 @@ header {
     }
   }
 }
-.stars-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  &:before {
-    content: "\f005 \f005 \f005 \f005 \f005";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 8px;
-    color: #0062fc;
-  }
-}
 
 .stars-outer {
   position: relative;
@@ -352,6 +338,22 @@ header {
     font-weight: 900;
     font-size: 8px;
     color: #ccc;
+  }
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+
+    &:before {
+      content: "\f005 \f005 \f005 \f005 \f005";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 8px;
+      color: #0062fc;
+    }
   }
 }
 
@@ -480,7 +482,7 @@ footer {
   div {
     display: flex;
     justify-content: space-evenly;
-    align-items: left;
+    align-items: flex-start;
   }
   ul li {
     list-style: none;

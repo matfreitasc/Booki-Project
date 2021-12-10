@@ -296,21 +296,25 @@ header img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .card {
-  width: 170px;
-  border-radius: 10px;
+  width: 180px;
+  height: 150px;
+  border-radius: 15px;
   background-color: white;
   -webkit-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
           box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
@@ -338,7 +342,7 @@ header img {
   position: relative;
   width: 100%;
   height: 80px;
-  padding: 5px;
+  padding: 4px;
   overflow: hidden;
 }
 
@@ -347,7 +351,7 @@ header img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .right-grid {
@@ -477,14 +481,6 @@ header img {
   border-radius: 8px 0 0 8px;
 }
 
-.stars-inner::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 8px;
-  color: #0062fc;
-}
-
 .stars-outer {
   position: relative;
   display: inline-block;
@@ -496,6 +492,23 @@ header img {
   font-weight: 900;
   font-size: 8px;
   color: #ccc;
+}
+
+.stars-outer .stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.stars-outer .stars-inner:before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 8px;
+  color: #0062fc;
 }
 
 .activities-container-grid {
@@ -669,9 +682,9 @@ footer div {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 footer ul li {
