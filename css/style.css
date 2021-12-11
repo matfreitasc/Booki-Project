@@ -324,6 +324,11 @@ header img {
   margin: 2px;
 }
 
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
 .cards-content {
   margin: 5px 0px 5px 5px;
 }
@@ -481,16 +486,21 @@ header img {
   border-radius: 8px 0 0 8px;
 }
 
+.ratings {
+  width: 52px;
+}
+
 .stars-outer {
   position: relative;
   display: inline-block;
+  width: 52px;
 }
 
 .stars-outer:before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 8px;
+  font-size: 9px;
   color: #ccc;
 }
 
@@ -500,14 +510,34 @@ header img {
   left: 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 100%;
+  width: 0;
+}
+
+.stars-outer .stars-inner.one-star {
+  width: 10px;
+}
+
+.stars-outer .stars-inner.two-stars {
+  width: 20px;
+}
+
+.stars-outer .stars-inner.three-stars {
+  width: 30px;
+}
+
+.stars-outer .stars-inner.four-stars {
+  width: 40px;
+}
+
+.stars-outer .stars-inner.five-stars {
+  width: 50px;
 }
 
 .stars-outer .stars-inner:before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 8px;
+  font-size: 9px;
   color: #0062fc;
 }
 
@@ -541,6 +571,11 @@ header img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 25px;
+}
+
+.active-container a {
+  text-decoration: none;
+  color: black;
 }
 
 .active-container .active-card {
@@ -685,11 +720,13 @@ footer div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 70px;
 }
 
 footer ul li {
   list-style: none;
   font-size: 10px;
+  margin: 5px 0px;
 }
 
 footer .footer-item {
@@ -698,8 +735,8 @@ footer .footer-item {
 }
 
 footer .footer-item h3 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
