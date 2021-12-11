@@ -154,20 +154,24 @@ header {
     font-weight: 600;
     padding: 5px;
   }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-right: 10px;
+    height: 30px;
+    border-radius: 40px;
+    border-right: 1.5px solid silver;
+    border-top: 1.5px solid silver;
+    border-bottom: 1.5px solid silver;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+  }
 }
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  padding-right: 10px;
-  height: 30px;
-  border-radius: 40px;
-  border-right: 1.5px solid silver;
-  border-top: 1.5px solid silver;
-  border-bottom: 1.5px solid silver;
-  cursor: pointer;
-}
+
 .icon {
   display: flex;
   justify-content: center;
