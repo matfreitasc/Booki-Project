@@ -26,7 +26,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px 0 0;
 }
 
 header img {
@@ -34,11 +33,6 @@ header img {
   height: 40px;
   margin-top: 20px;
   cursor: pointer;
-}
-
-.bold-text {
-  font-weight: bold;
-  margin: 30px 0px 20px 20px;
 }
 
 .show-more {
@@ -206,7 +200,7 @@ header img {
 }
 
 .wrapper p {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   padding: 5px;
 }
@@ -300,17 +294,22 @@ header img {
 
 .mid-grid {
   width: 70%;
-  height: 450px;
+  height: auto;
   background-color: #f2f2f2;
   margin-right: 28px;
   border-radius: 20px;
+}
+
+.mid-grid .bold-text {
+  font-weight: bold;
+  margin: 25px 0px 20px 20px;
 }
 
 .container-grid-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 25px;
+  gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -322,12 +321,12 @@ header img {
       flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin: 20px 0;
+  margin: 20px 0 5px 0;
 }
 
 .container-grid-row .card {
-  width: 180px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 10px;
   background-color: white;
   -webkit-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
@@ -346,7 +345,7 @@ header img {
 .container-grid-row .card .image-container {
   position: relative;
   width: 100%;
-  height: 90px;
+  height: 80px;
   padding: 3px;
   overflow: hidden;
 }
@@ -364,7 +363,7 @@ header img {
 }
 
 .container-grid-row .card .cards-content .card-hotel-name {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
 }
 
@@ -382,19 +381,20 @@ header img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 30%;
-  height: 450px;
+  height: auto;
   background-color: #f2f2f2;
   border-radius: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
 }
 
 .right-grid .header-right-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 100%;
   height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -402,7 +402,6 @@ header img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
 }
 
 .right-grid .container-grid-column {
@@ -438,7 +437,7 @@ header img {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-radius: 10px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .right-grid .container-grid-column .side-card .inner-card {
@@ -448,9 +447,8 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 95px;
-  margin: 10px;
-  width: 220px;
+  height: 100%;
+  width: 100%;
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
@@ -472,7 +470,8 @@ header img {
 }
 
 .right-grid .container-grid-column .side-card .inner-card .content .card-hotel-name {
-  font-size: 12px;
+  font-size: 10px;
+  margin-bottom: 10px;
 }
 
 .right-grid .container-grid-column .side-card .inner-card .content .card-hotel-price {
@@ -558,7 +557,7 @@ header img {
 .activities-container-grid {
   width: 100%;
   height: auto;
-  margin: 30px 0;
+  margin: 20px 0 5px 0;
 }
 
 .activities-container-grid h2 {
@@ -573,7 +572,7 @@ header img {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 320px;
+  height: 280px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
@@ -584,7 +583,7 @@ header img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
 }
 
 .active-container a {
@@ -594,7 +593,7 @@ header img {
 
 .active-container .active-card {
   position: relative;
-  width: 212px;
+  width: 150px;
   height: auto;
   border-radius: 15px;
   background-color: white;
@@ -610,6 +609,7 @@ header img {
   -ms-flex-line-pack: center;
       align-content: center;
   vertical-align: middle;
+  height: 45px;
 }
 
 .active-container .active-card.small {
@@ -632,13 +632,13 @@ header img {
 }
 
 .active-container .active-card.medium {
-  height: 120px;
+  height: 110px;
 }
 
 .active-container .active-card.medium .activities-image-container {
   position: relative;
   width: 100%;
-  height: 90px;
+  height: 60px;
   overflow: hidden;
 }
 
@@ -651,13 +651,13 @@ header img {
 }
 
 .active-container .active-card.large {
-  height: 170px;
+  height: 120px;
 }
 
 .active-container .active-card.large .activities-image-container {
   position: relative;
   width: 100%;
-  height: 130px;
+  height: 90px;
   overflow: hidden;
 }
 
@@ -670,13 +670,13 @@ header img {
 }
 
 .active-container .active-card.xlarge {
-  height: 170px;
+  height: 140px;
 }
 
 .active-container .active-card.xlarge .activities-image-container {
   position: relative;
   width: 100%;
-  height: 130px;
+  height: 100px;
   overflow: hidden;
 }
 
@@ -689,13 +689,13 @@ header img {
 }
 
 .active-container .active-card.big {
-  height: 320px;
+  height: 230px;
 }
 
 .active-container .active-card.big .activities-image-container {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 185px;
   overflow: hidden;
 }
 
@@ -713,9 +713,9 @@ footer {
   display: flex;
   padding: 15px;
   background-color: #f2f2f2;
-  width: 992px;
-  height: 150px;
-  margin: 0 auto;
+  width: 100%;
+  height: 180px;
+  margin: 40px 0 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
