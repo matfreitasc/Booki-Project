@@ -6,12 +6,11 @@
 }
 
 body {
-  width: 100%;
+  min-width: 375px;
 }
 
 main {
-  padding: 0 35px 0 35px;
-  width: 768px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -19,58 +18,72 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
   img {
     margin-right: auto;
-    height: 40px;
-    margin-top: 20px;
+    height: 50px;
+    margin: 20px 0 20px 0;
     cursor: pointer;
+  }
+  nav {
+    .nav-links {
+      width: 100%;
+      display: flex;
+      list-style: none;
+
+      li {
+        width: 188px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        height: 45px;
+        height: 45px;
+        border-bottom: 5px #f2f2f2 solid;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        &:first-child {
+          a {
+            color: #3700ff;
+          }
+          border-bottom: 5px #3700ff solid;
+        }
+      }
+    }
   }
 }
 
 .show-more {
+  font-size: 16px;
   border-style: none;
   cursor: pointer;
   font-weight: bold;
-  margin: 0px 0px 0px 20px;
-}
-
-.nav-links {
-  list-style: none;
-  margin-top: 0;
-  li {
-    display: inline-block;
-    height: 100px;
-    padding: 20px;
-    border-top: white 2px solid;
-    cursor: pointer;
-  }
-  li:hover {
-    border-top: #0065fc 2px solid;
-  }
-  li a {
-    text-decoration: none;
-    color: #0065fc;
-    font-size: 15px;
-    font-weight: 600;
-    margin-right: 20px;
-    transition: 0.5s;
-  }
+  margin: 20px 0;
+  background-color: white;
 }
 
 .search-box {
   padding: 5px 0px 5px 0px;
+  margin: 0 22px;
   form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
-    width: 280px;
+    width: 100%;
   }
   h3 {
     margin-top: 5px;
+    font-size: 22px;
+    padding-bottom: 8px;
   }
   p {
-    font-size: 13px;
+    font-size: 16px;
+    font-style: semi-bold;
   }
 
   .search-bar {
@@ -78,16 +91,17 @@ header {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 35px;
-    border-radius: 5px;
+    height: 50px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 12px;
     div {
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #f2f2f2;
-      border-radius: 10px 0px 0px 10px;
-      height: 35px;
-      width: 40%;
+      border-radius: 12px 0px 0px 12px;
+      height: 100%;
+      width: 60px;
       color: black;
       border: none;
       cursor: pointer;
@@ -96,12 +110,11 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 35px;
-      width: 160px;
+      height: 100%;
+      width: 100%;
       color: black;
-      border: none;
       text-align: center;
-      border: #f2f2f2 1px solid;
+      border: none;
       text-transform: capitalize;
       font-weight: bold;
       font-size: 14px;
@@ -112,9 +125,9 @@ header {
 
     button {
       background-color: #0065fc;
-      border-radius: 0 10px 10px 0;
-      height: 35px;
-      width: 40%;
+      border-radius: 14px;
+      height: 100%;
+      width: 60px;
       color: white;
       border: none;
       cursor: pointer;
@@ -122,66 +135,68 @@ header {
   }
 }
 .filter {
+  margin: 20px 22px;
   display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 0px;
-  width: auto;
-  height: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 330px;
   border-radius: 5px;
   span {
     text-align: center;
   }
   h3 {
-    padding-right: 20px;
-    font-size: 14px;
+    font-size: 18px;
+    margin: 10px 0px;
   }
 }
 .wrapper {
-  margin-right: 20%;
   display: flex;
-  align-items: center;
-  height: 40px;
-  gap: 15px;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
   p {
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 600;
     padding: 5px;
   }
   .button {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: auto;
-    padding-right: 10px;
-    height: 30px;
-    border-radius: 40px;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 25px;
     border-right: 1.5px solid silver;
     border-top: 1.5px solid silver;
     border-bottom: 1.5px solid silver;
+    flex-shrink: 0;
     cursor: pointer;
+    &:nth-child(3) {
+      order: 2;
+    }
     &:hover {
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      color: #0059fc;
+      background-color: #deebff;
     }
   }
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  width: 30px;
-  height: 30px;
-  border-radius: 40px;
-  color: #0059fc;
-  background-color: #deebff;
-}
 .info-found {
+  margin: 20px 22px;
   display: flex;
   align-items: start;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
   p {
     margin-left: 5px;
     width: 300px;
@@ -203,86 +218,86 @@ header {
 
 #accommodations {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-top: 20px;
-}
-.mid-grid {
-  width: 70%;
-  height: auto;
-  background-color: #f2f2f2;
-  margin-right: 28px;
-  border-radius: 20px;
-  .bold-text {
-    font-weight: bold;
-    margin: 25px 0px 20px 20px;
-  }
-}
-
-.container-grid-row {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  margin: 20px 0 5px 0;
-  .card {
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
-    .ratings {
-      margin: 2px;
+  .mid-grid {
+    margin: 0 22px;
+    height: auto;
+    border-radius: 20px;
+    .bold-text {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 25px 0px;
+      text-align: center;
     }
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    .image-container {
-      position: relative;
+    .container-grid-row {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
       width: 100%;
-      height: 80px;
-      padding: 3px;
-      overflow: hidden;
-      img {
+      height: auto;
+      margin: 20px 0 5px 0;
+      .card {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 7px 7px 0px 0px;
-      }
-    }
-    .cards-content {
-      margin: 4px 0px 0px 10px;
-      .card-hotel-name {
-        font-size: 10px;
-        font-weight: bold;
-      }
-      .card-hotel-price {
-        font-size: 10px;
-        padding-top: 5px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
+        .ratings {
+          margin: 2px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        .image-container {
+          position: relative;
+          width: 100%;
+          height: 130px;
+          padding: 5px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px 16px 0px 0px;
+          }
+        }
+        .cards-content {
+          margin: 10px;
+          .card-hotel-name {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .card-hotel-price {
+            font-size: 14px;
+            padding-top: 5px;
+          }
+        }
       }
     }
   }
 }
 
 .right-grid {
+  order: -1;
   display: flex;
   flex-direction: column;
-  width: 30%;
   height: auto;
+  width: 100%;
   background-color: #f2f2f2;
-  border-radius: 20px;
+  margin: 0;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   .header-right-grid {
     display: flex;
     width: 100%;
     height: 50px;
     align-items: center;
     justify-content: space-between;
+    font-size: 22px;
   }
   .container-grid-column {
     width: 100%;
@@ -296,29 +311,33 @@ header {
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      border-radius: 10px;
+      border-radius: 20px;
       gap: 20px;
+      width: 100%;
       .inner-card {
         display: flex;
         align-items: center;
-        height: 100%;
+        height: 145px;
         width: 100%;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 20px;
         box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
         .content {
           padding: 5px;
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
+          justify-content: space-between;
+          height: 100%;
+          padding: 10px;
+          margin-top: 10px;
           .stars-outer {
           }
           .card-hotel-name {
-            font-size: 10px;
+            font-size: 16px;
             margin-bottom: 10px;
           }
           .card-hotel-price {
-            font-size: 10px;
+            font-size: 14px;
           }
           p {
             font-size: 10px;
@@ -328,16 +347,16 @@ header {
         }
       }
       .side-image-container {
-        height: 95px;
-        width: 90px;
+        height: 100%;
+        width: 130px;
         overflow: hidden;
         flex-shrink: 0;
-        padding: 3px;
+        padding: 5px;
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 8px 0 0 8px;
+          border-radius: 15px 0 0 15px;
         }
       }
     }
@@ -351,12 +370,12 @@ header {
 .stars-outer {
   position: relative;
   display: inline-block;
-  width: 52px;
+  width: 100px;
   &:before {
     content: "\f005 \f005 \f005 \f005 \f005";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    font-size: 9px;
+    font-size: 14px;
     color: #ccc;
   }
   .stars-inner {
@@ -368,142 +387,83 @@ header {
     width: 0;
 
     &.one-star {
-      width: 10px;
+      width: 15px;
     }
     &.two-stars {
-      width: 20px;
+      width: 32px;
     }
     &.three-stars {
-      width: 30px;
+      width: 47px;
     }
     &.four-stars {
-      width: 40px;
+      width: 63px;
     }
     &.five-stars {
-      width: 50px;
+      width: 80px;
     }
     &:before {
       content: "\f005 \f005 \f005 \f005 \f005";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      font-size: 9px;
+      font-size: 14px;
       color: #0062fc;
     }
   }
 }
-
-.activities-container-grid {
+#activities {
   width: 100%;
+}
+.activities-container-grid {
   height: auto;
-  margin: 20px 0 5px 0;
+  margin: 5px 20px;
   h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
   }
-}
-.active-container {
-  display: flex;
-  align-content: center;
-  height: 280px;
-  flex-flow: column wrap;
-  flex-grow: 1;
-  justify-content: space-between;
-  gap: 20px;
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  .active-card {
-    position: relative;
-    width: 150px;
-    height: auto;
-    border-radius: 15px;
-    background-color: white;
-    text-align: start;
-    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
-
-    p {
-      font-size: 12px;
-      padding: 10px;
-      font-weight: 800;
-      align-content: center;
-      vertical-align: middle;
-      height: 45px;
+  .active-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a {
+      text-decoration: none;
     }
-    &.small {
-      height: 120px;
+    .active-card {
+      width: 338px;
+      height: 190px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
+      .ratings {
+        margin: 2px;
+      }
+      p {
+        font-size: 16px;
+        padding: 18px;
+        color: black;
+        font-weight: bold;
+      }
       .activities-image-container {
         position: relative;
         width: 100%;
-        height: 80px;
+        height: 135px;
         overflow: hidden;
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 15px 15px 0 0;
+          border-radius: 16px 16px 0px 0px;
         }
       }
-    }
-    &.medium {
-      height: 110px;
-      .activities-image-container {
-        position: relative;
-        width: 100%;
-        height: 60px;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 15px 15px 0 0;
+      .cards-content {
+        margin: 10px;
+        .card-hotel-name {
+          font-size: 16px;
+          font-weight: bold;
         }
-      }
-    }
-    &.large {
-      height: 120px;
-      .activities-image-container {
-        position: relative;
-        width: 100%;
-        height: 90px;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 15px 15px 0 0;
-        }
-      }
-    }
-    &.xlarge {
-      height: 140px;
-      .activities-image-container {
-        position: relative;
-        width: 100%;
-        height: 100px;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 15px 15px 0 0;
-        }
-      }
-    }
-
-    &.big {
-      height: 230px;
-      .activities-image-container {
-        position: relative;
-        width: 100%;
-        height: 185px;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 15px 15px 0 0;
+        .card-hotel-price {
+          font-size: 14px;
+          padding-top: 5px;
         }
       }
     }
@@ -511,30 +471,26 @@ header {
 }
 
 footer {
-  display: flex;
-  padding: 15px;
+  .footer-wrapper {
+    margin: 20px 20px 0 20px;
+  }
   background-color: #f2f2f2;
-  width: 100%;
-  height: 180px;
-  margin: 40px 0 0 0;
-  align-items: center;
-  justify-content: left;
   div {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    gap: 70px;
   }
   ul li {
     list-style: none;
-    font-size: 12px;
-    margin: 5px 0px;
+    font-size: 16px;
+    margin: 10px 0px;
   }
   .footer-item {
     display: inline-block;
-    padding: 50px;
+    padding: 10px;
     h3 {
-      font-size: 14px;
+      font-size: 18px;
       font-weight: bold;
       margin-bottom: 10px;
     }
