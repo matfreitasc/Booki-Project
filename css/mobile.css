@@ -110,7 +110,7 @@ header nav .nav-links li:first-child a {
 
 .search-box p {
   font-size: 16px;
-  font-style: semi-bold;
+  font-weight: 600;
 }
 
 .search-box .search-bar {
