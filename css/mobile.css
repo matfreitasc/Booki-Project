@@ -238,7 +238,8 @@ header nav .nav-links li:first-child a {
 .wrapper p {
   font-size: 16px;
   font-weight: 600;
-  padding: 5px;
+  padding-right: 15px;
+  padding-left: 5px;
 }
 
 .wrapper .button {
