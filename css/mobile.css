@@ -194,7 +194,7 @@ header nav .nav-links li:first-child a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 330px;
+  width: 80%;
   border-radius: 5px;
 }
 
@@ -223,6 +223,18 @@ header nav .nav-links li:first-child a {
   gap: 10px;
 }
 
+.wrapper .flex-button-3 {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.wrapper .flex-button-1 {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
 .wrapper p {
   font-size: 16px;
   font-weight: 600;
@@ -248,12 +260,6 @@ header nav .nav-links li:first-child a {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   cursor: pointer;
-}
-
-.wrapper .button:nth-child(3) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
 }
 
 .wrapper .button:hover {
