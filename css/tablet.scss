@@ -114,10 +114,19 @@ header {
       background-color: #0065fc;
       border-radius: 0 10px 10px 0;
       height: 35px;
-      width: 40%;
+      width: 50%;
       color: white;
       border: none;
       cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .search-icon {
+        visibility: hidden;
+      }
+      p {
+        font-weight: 600;
+      }
     }
   }
 }
@@ -519,6 +528,11 @@ footer {
   margin: 40px 0 0 0;
   align-items: center;
   justify-content: left;
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+  }
   div {
     display: flex;
     justify-content: space-evenly;

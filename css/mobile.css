@@ -180,6 +180,16 @@ header nav .nav-links li:first-child a {
   color: white;
   border: none;
   cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+}
+
+.search-box .search-bar button p {
+  visibility: hidden;
+}
+
+.search-box .search-bar button i {
+  font-size: 18px;
 }
 
 .filter {
@@ -686,6 +696,12 @@ footer {
 
 footer .footer-wrapper {
   margin: 20px 20px 0 20px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
 }
 
 footer div {

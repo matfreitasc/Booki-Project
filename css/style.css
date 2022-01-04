@@ -64,6 +64,10 @@ header img {
   border-top: #0065fc 2px solid;
 }
 
+.nav-links li:visited {
+  border-top: #0065fc 2px solid;
+}
+
 .nav-links li a {
   text-decoration: none;
   color: #0065fc;
@@ -148,7 +152,7 @@ header img {
   width: 160px;
   color: black;
   border: none;
-  text-align: center;
+  padding: 10px;
   border: #f2f2f2 1px solid;
   text-transform: capitalize;
   font-weight: bold;
@@ -163,10 +167,27 @@ header img {
   background-color: #0065fc;
   border-radius: 0 10px 10px 0;
   height: 35px;
-  width: 40%;
+  width: 45%;
   color: white;
   border: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-box .search-bar button .search-icon {
+  visibility: hidden;
+}
+
+.search-box .search-bar button p {
+  padding-right: 10px;
 }
 
 .filter {
@@ -721,6 +742,12 @@ footer {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
 }
 
 footer div {

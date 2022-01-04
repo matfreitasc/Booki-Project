@@ -52,6 +52,9 @@ header {
   li:hover {
     border-top: #0065fc 2px solid;
   }
+  li:visited {
+    border-top: #0065fc 2px solid;
+  }
   li a {
     text-decoration: none;
     color: #0065fc;
@@ -105,7 +108,7 @@ header {
       width: 160px;
       color: black;
       border: none;
-      text-align: center;
+      padding: 10px;
       border: #f2f2f2 1px solid;
       text-transform: capitalize;
       font-weight: bold;
@@ -119,10 +122,19 @@ header {
       background-color: #0065fc;
       border-radius: 0 10px 10px 0;
       height: 35px;
-      width: 40%;
+      width: 45%;
       color: white;
       border: none;
       cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .search-icon {
+        visibility: hidden;
+      }
+      p {
+        padding-right: 10px;
+      }
     }
   }
 }
@@ -519,6 +531,11 @@ footer {
   margin: 0 auto;
   align-items: center;
   justify-content: left;
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+  }
   div {
     display: flex;
     justify-content: space-evenly;
