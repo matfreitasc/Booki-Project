@@ -28,13 +28,14 @@ header {
     cursor: pointer;
   }
   nav {
+    width: 100%;
     .nav-links {
       width: 100%;
       display: flex;
       list-style: none;
-
+      justify-content: center;
       li {
-        width: 188px;
+        width: 50%;
         text-align: center;
         font-size: 18px;
         font-weight: bold;
@@ -47,9 +48,9 @@ header {
         }
         &:first-child {
           a {
-            color: #3700ff;
+            color: #0065fc;
           }
-          border-bottom: 5px #3700ff solid;
+          border-bottom: 5px #0065fc solid;
         }
       }
     }
@@ -61,12 +62,12 @@ header {
   border-style: none;
   cursor: pointer;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
   background-color: white;
 }
 
 .search-box {
-  padding: 5px 0px 5px 0px;
+  padding: 20px 0px 5px 0px;
   margin: 0 22px;
   form {
     display: flex;
@@ -78,7 +79,7 @@ header {
   h3 {
     margin-top: 5px;
     font-size: 22px;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
   }
   p {
     font-size: 16px;
@@ -179,7 +180,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-width: 150px;
+    min-width: 145px;
     height: 50px;
     border-radius: 25px;
     border-right: 1.5px solid silver;
@@ -213,7 +214,7 @@ header {
   p {
     margin-left: 5px;
     width: 300px;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 .info-icon {
@@ -303,7 +304,7 @@ header {
   background-color: #f2f2f2;
   margin: 0;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   .header-right-grid {
     display: flex;
     width: 100%;
@@ -325,7 +326,7 @@ header {
       align-items: center;
       justify-content: flex-start;
       border-radius: 20px;
-      gap: 20px;
+      gap: 10px;
       width: 100%;
       .inner-card {
         display: flex;
@@ -442,7 +443,7 @@ header {
       height: 210px;
       border-radius: 20px;
       background-color: white;
-      box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
       .ratings {
         margin: 2px;
       }

@@ -43,16 +43,23 @@ header img {
   cursor: pointer;
 }
 
+header nav {
+  width: 100%;
+}
+
 header nav .nav-links {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav .nav-links li {
-  width: 188px;
+  width: 50%;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -67,11 +74,11 @@ header nav .nav-links li a {
 }
 
 header nav .nav-links li:first-child {
-  border-bottom: 5px #3700ff solid;
+  border-bottom: 5px #0065fc solid;
 }
 
 header nav .nav-links li:first-child a {
-  color: #3700ff;
+  color: #0065fc;
 }
 
 .show-more {
@@ -79,12 +86,12 @@ header nav .nav-links li:first-child a {
   border-style: none;
   cursor: pointer;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
   background-color: white;
 }
 
 .search-box {
-  padding: 5px 0px 5px 0px;
+  padding: 20px 0px 5px 0px;
   margin: 0 22px;
 }
 
@@ -105,7 +112,7 @@ header nav .nav-links li:first-child a {
 .search-box h3 {
   margin-top: 5px;
   font-size: 22px;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
 }
 
 .search-box p {
@@ -262,7 +269,7 @@ header nav .nav-links li:first-child a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 150px;
+  min-width: 145px;
   height: 50px;
   border-radius: 25px;
   border-right: 1.5px solid silver;
@@ -309,7 +316,7 @@ header nav .nav-links li:first-child a {
 .info-found p {
   margin-left: 5px;
   width: 300px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .info-icon {
@@ -439,7 +446,7 @@ header nav .nav-links li:first-child a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
 }
 
 .right-grid .header-right-grid {
@@ -490,7 +497,7 @@ header nav .nav-links li:first-child a {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-radius: 20px;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 
@@ -646,8 +653,8 @@ header nav .nav-links li:first-child a {
   height: 210px;
   border-radius: 20px;
   background-color: white;
-  -webkit-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
-          box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .activities-container-grid .active-container .active-card .ratings {
