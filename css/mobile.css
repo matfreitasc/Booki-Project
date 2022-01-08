@@ -191,7 +191,7 @@ header nav .nav-links li:first-child a {
   line-height: 50px;
 }
 
-.search-box .search-bar button p {
+.search-box .search-bar button span {
   visibility: hidden;
 }
 

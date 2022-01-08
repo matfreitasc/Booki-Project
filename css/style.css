@@ -186,8 +186,9 @@ header img {
   visibility: hidden;
 }
 
-.search-box .search-bar button p {
-  padding-right: 10px;
+.search-box .search-bar button span {
+  padding-right: 15px;
+  font-weight: 500;
 }
 
 .filter {
