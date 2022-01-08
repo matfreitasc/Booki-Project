@@ -143,11 +143,11 @@ header img {
   width: 160px;
   color: black;
   border: none;
-  text-align: center;
   border: #f2f2f2 1px solid;
   text-transform: capitalize;
   font-weight: bold;
   font-size: 14px;
+  padding: 10px;
 }
 
 .search-box .search-bar input:focus {
@@ -456,6 +456,11 @@ header img {
           justify-content: flex-start;
   border-radius: 10px;
   gap: 20px;
+}
+
+.right-grid .container-grid-column .side-card a {
+  text-decoration: none;
+  color: black;
 }
 
 .right-grid .container-grid-column .side-card .inner-card {

@@ -462,6 +462,11 @@ header img {
   gap: 20px;
 }
 
+.right-grid .container-grid-column .side-card a {
+  text-decoration: none;
+  color: black;
+}
+
 .right-grid .container-grid-column .side-card .inner-card {
   display: -webkit-box;
   display: -ms-flexbox;

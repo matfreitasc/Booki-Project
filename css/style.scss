@@ -312,6 +312,10 @@ header {
       justify-content: flex-start;
       border-radius: 10px;
       gap: 20px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
       .inner-card {
         display: flex;
         align-items: center;
