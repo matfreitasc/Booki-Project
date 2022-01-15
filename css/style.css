@@ -186,9 +186,8 @@ header img {
   visibility: hidden;
 }
 
-.search-box .search-bar button span {
-  padding-right: 15px;
-  font-weight: 500;
+.search-box .search-bar button p {
+  padding-right: 10px;
 }
 
 .filter {
@@ -228,7 +227,7 @@ header img {
 
 .wrapper p {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 5px;
 }
 
@@ -423,7 +422,7 @@ header img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .right-grid .container-grid-column {
@@ -459,12 +458,6 @@ header img {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-radius: 10px;
-  gap: 20px;
-}
-
-.right-grid .container-grid-column .side-card a {
-  text-decoration: none;
-  color: black;
 }
 
 .right-grid .container-grid-column .side-card .inner-card {
@@ -475,6 +468,7 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   height: 95px;
+  margin: 10px;
   width: 220px;
   background-color: white;
   border-radius: 10px;
@@ -494,6 +488,7 @@ header img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  gap: 10px;
 }
 
 .right-grid .container-grid-column .side-card .inner-card .content .card-hotel-name {
